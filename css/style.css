@@ -1,0 +1,267 @@
+* { box-sizing: border-box; }
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bolder;
+	color: #000;
+	text-transform: uppercase;
+	border-bottom: 2px solid #000;
+}
+
+.container h1 {
+	text-align: left;
+}
+
+h2 {
+	font-size: 20px;
+	margin-top: 0;
+	text-align: left;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #fff;
+	margin: 0;
+	}
+
+header {
+	margin-top: 20px;
+}
+
+header .container {
+	text-align: left;
+}
+
+.container {
+	text-align: center;
+	width: 1200px;
+	margin: 0 auto;
+	background: #fff;
+}	
+
+/*Универсальный clearfix*/
+.container::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.logo img{
+	width: 175px;
+}
+
+.logo {
+	display: inline-block;
+}
+
+.menu {
+	float: right;
+}
+
+.menu > ul {
+	margin: 0;
+
+}
+
+.menu > ul > li {
+	display: inline-block;
+	list-style: none;
+	padding: 20px 40px;
+	border-top: 6px solid #e22e25;
+	margin-right: -5px;
+	position: relative;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.menu li {
+	list-style: none;
+}
+
+.menu li:hover {
+	background: #e22e25;
+	color: #fff;
+}
+.menu > ul > li:hover > a{
+	color: #fff;
+	font-weight: bold;
+}
+
+.menu a {
+	text-decoration: none;
+	color: #000;
+}
+
+.menu {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+}
+
+.menu > ul > li > ul {
+	display: none;
+	background: #fff;
+	color: #e22e25;	
+	width: 500px;
+	text-align: left;
+	padding: 0;
+	position: relative;
+	border: 5px solid #e22e25;
+	z-index: 10;
+}
+
+.menu > ul > li > ul > li > ul {
+	display: none;
+	background: #fff;
+	color: #e22e25;	
+	width: 300px;
+	text-align: left;
+	padding: 0;
+	position: relative;
+	border: 5px solid #e22e25;
+	margin: 0;
+	z-index: 10;
+}
+
+
+.menu > ul > li > ul > li, .menu > ul > li > ul > li > ul > li {
+	margin: 0;
+	border: 0;
+	padding: 10px;
+}
+
+.menu > ul > li > ul > li:hover > a, .menu > ul > li > ul > li > ul > li:hover > a {
+	font-weight: bold;
+	padding-left: 20px;
+	color: #fff;
+}
+
+
+
+.menu > ul > li:hover > ul {
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+
+.menu > ul > li > ul > li:hover > ul {
+	display: block;
+	position: absolute;
+	top: -5px;
+	right: 100%;
+}
+
+.header-contact {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+} 
+
+.header-contact div {
+	display: inline-block;
+}
+
+h1 {
+	color: red;
+}
+
+.sostav {
+	text-align: center;
+}
+
+.sostav-company {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	margin: 30px;
+	box-shadow: 0 0 20px #d5d5d5;
+	text-align: center;
+	position: relative;
+	vertical-align: top;
+}
+
+h3 {
+	font-size: 13px;
+	position: absolute;
+	opacity: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: #fff;
+	transition: 0.5s;
+	background: #e22e25;
+	padding: 10px 0;
+	margin: 0;
+}
+
+.sostav-company:hover h3 {
+	opacity: 1;
+	border: 0;
+} 
+
+.sostav-company:hover{
+	border: 2px solid #e22e25;
+} 
+
+.sostav-company img {
+	width: 100%;
+}
+
+
+main .container{
+	text-align: justify;
+}
+
+main p {
+	text-indent: 50px;
+	margin: 0;
+}
+
+.name-section {
+	text-align: center;
+	color: #e22e25;
+	text-transform: uppercase;
+	margin: 20px auto;
+}
+
+.line {
+	width: 800px;
+	height: 30px;
+	border-top: 2px solid #d5d5d5;
+	border-left: 2px solid #d5d5d5;
+	border-right: 2px solid #d5d5d5;
+}
+
+.main-trend {
+	width: 800px;
+	margin: 20px auto;
+
+}
+
+.trend-text, .trend-picture {
+	width: 50%;
+	display: inline-block;
+	margin-right: -4px;
+	font-weight: bold;
+	vertical-align: middle;
+	padding: 10px;
+}
+
+
+.trend-picture img{
+	width: 100%;
+}
+
+.right-line {
+	border-right: 6px solid #e22e25; 
+}
+
+.left-line {
+	border-left: 6px solid #e22e25; 
+}
+
+footer .container {
+	border-top: 6px solid #e22e25;
+	padding: 20px;
+}
